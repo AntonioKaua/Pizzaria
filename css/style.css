@@ -1,0 +1,197 @@
+/*preencher toda a tela */
+html, body {
+    height: 100%;
+}
+
+
+/*NAVBAR CTRL+SHIFT+R*/
+#brand-logo{
+    width: 50px;
+}
+.navbar.navbar-expand-lg{
+    background-color: #000;
+    font-weight: bold;
+}
+.navbar.navbar-expand-lg a{
+    color: #fff;
+    font-weight: bold;
+}
+
+/* HOME */
+#main-banner{
+    background-image: url("../img/pizza-banner.jpg");
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-position-y: -300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-banner h1{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+    width: 550px;
+    font-size: 50px;
+    background-color: #000;
+}
+
+#main-container{
+    margin-bottom: 100px;
+    padding: 50px 0;
+    text-align: center;
+    min-height: 50%;
+}
+#main-container h2{
+    margin-bottom: 30px;
+}
+.row{
+    margin: 0;
+}
+
+#pizza-form{
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: left;
+}
+.form-group{
+    margin-top: 25px;
+}
+#pizza-form label{
+    font-weight: bold;
+}
+.btn.btn-primary{
+    background-color: #000;
+    border-color: #000;
+}
+
+/*ALERT */
+.alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.alert.alert-success {
+    border: 2px solid #155724;
+}
+.alert.alert-warning {
+    border: 2px solid #856404;
+}
+/*FOOTER CTRL+SHIFT+R*/
+footer {
+    position: relative;
+    width: 100%;
+    height: 175px;
+    background-color: #000;
+    color: #fff;
+    /* alinhar com flaxbox  horizontal e vertical*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+/*DASHBOARD CTRL+SHIFT+R*/
+.delete-btn, .update-btn {
+    border: none;
+    background-color: transparent;
+}
+.delete-btn{
+    padding-top: 10px;
+}
+.delete-btn i{
+    color: #721c24;
+    font-size: 20px;
+}
+.update-btn{
+    margin-left: 10px;
+}
+.update-btn i{
+    color: #004085;
+    font-size: 20px;
+}
+.update-form{
+    display: flex;
+    flex-direction: row;
+}
+.update-btn{
+    color: #004085;
+    font-size: 20px;
+}
+.status-input{
+    width: 50%;
+}
+.table ul{
+    text-align: left;
+}
+td .form-group{
+    margin-top: 0px;
+}
+/*MODAL*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  /* Estilo dos botões */
+  .btn-confirm, .btn-cancel {
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #888;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+
+
+  .btn-cancel {
+    background-color: #f44336;
+  }
+  /* RESPONSIVO */
+  @media(max-width:425px) {
+    #main-banner{
+        background-position-y: 0 ;
+    }
+    #main-banner h1{
+        padding: 10px;
+    }
+    #main-container{
+        margin-bottom: 0;
+    }
+  }
+
+  .table-striped > tbody > tr:nth-child(2n) > td, 
+  .table-striped > tbody> tr:nth-child(2n) > th {
+     background-color: lightgreen;
+  }
+
+
+  
+
+  
